@@ -30,12 +30,14 @@ public class TransactionRestController {
 	}
 
 	/**
-	 * The API to get the transactions with the functionality of pagination. Fixed the size of paginated data by 2 as mentioned in the requirement doc
+	 * The API to get the transactions with the functionality of pagination.
+	 * Fixed the size of paginated data by 2 as mentioned in the requirement document
 	 * Order by is only enabled on id of transaction
 	 *
 	 * @param start from where you want to get the next two elements
 	 * @param orderBy ASC or DES default is ASC
-	 * @return Two transactions from start. if start is at the last transaction then only that is returned and if start is more than size then empty list is returned.
+	 * @return Two transactions from start. if start is at the last transaction
+	 * then only that is returned and if start is more than size then empty list is returned.
 	 */
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public TransactionControllerResponse<TransactionDTO> getTransactions(@RequestParam int start,
