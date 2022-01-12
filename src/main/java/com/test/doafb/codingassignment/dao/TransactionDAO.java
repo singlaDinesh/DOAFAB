@@ -89,8 +89,8 @@ public class TransactionDAO extends BaseJsonDAO {
 			}
 
 		} catch (IOException e) {
-            logger.error(e.getMessage(), e);
-        }
+            		logger.error(e.getMessage(), e);
+        	}
 
 		return cache;
 	}
