@@ -40,10 +40,10 @@ public class TransactionRestController {
 	 * then only that is returned and if start is more than size then empty list is returned.
 	 */
 	@GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public TransactionControllerResponse<TransactionDTO> getTransactions(@RequestParam int start,
-    		@RequestParam(required = false) OrderBy orderBy) {
-        return service.getTransactions(start, orderBy);
-    }
+    	public TransactionControllerResponse<TransactionDTO> getTransactions(@RequestParam int start,
+    			@RequestParam(required = false) OrderBy orderBy) {
+        	return service.getTransactions(start, orderBy);
+    	}
 
 	/**
 	 * The API to get the transaction details
